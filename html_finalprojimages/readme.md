@@ -1,1 +1,1 @@
-This is my portfolio showcasing my skills
+This directory has all images used in this portfolio
