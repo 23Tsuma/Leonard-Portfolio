@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leonard Tsuma - Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Leonard Tsuma
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon" />
+            jdoe@jeemail.com
+          </div>
+          <div style="clear: both;"></div>
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon" />
+            +13456764598
+          </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/photo/2020/05/25/17/13/mockup-5219534_1280.jpg" class="profile_image" />
+      </div>
+      <div>
+        <h1>
+          Hi, I'm Leonard Tsuma! <img src="html_finalprojimages/waving-hand.png" width="60px" />
+        </h1>
+        <p>
+          I'm a software developer passionate about building responsive, dynamic web applications using modern technologies like React, Next.js, and TypeScript.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear: both;"></div>
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" />
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" />
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/nextjs.png" />
+          <h6>Next.js</h6>
+          <p>2 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" />
+          <h6>React</h6>
+          <p>3 years experience</p>
+        </div>
+        <div class="skill">
+          <img src="html_finalprojimages/typescript.png" />
+          <h6>TypeScript</h6>
+          <p>2 years experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear: both;"></div>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>SnapNetwork</h3>
+          <ul>
+            <li>Created a full-stack portfolio system for photographers and videographers using Next.js, MySQL, and Tailwind CSS.</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>TTUCU Mobile App</h3>
+          <ul>
+            <li>Developed a campus ministry mobile app with schedules, ministry info, and push notifications using React Native.</li>
+          </ul>
+        </div>
+        <hr />
+        <div class="project-card">
+          <h3>Asset Management System</h3>
+          <ul>
+            <li>Designed and implemented a web-based asset tracking system with check-in/out, catalog view, and reporting tools.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear: both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear: both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Leonard is a proactive developer with excellent problem-solving skills. He consistently delivers high-quality work and is a great collaborator.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I’ve worked with Leonard on multiple projects. His attention to detail and dedication to quality are unmatched. A reliable and innovative teammate.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Leonard is a fantastic coder with a deep understanding of modern frameworks. He brings creativity and clarity to every project he works on.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>
+          <input type="text" placeholder="Name (Optional)" /><br />
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" />
+      <h3>Thank you for your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+
+    <!-- Back to top -->
+    <div class="iconbutton">
+        <a href="#home">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+      </div>      
+  </body>
+</html>
